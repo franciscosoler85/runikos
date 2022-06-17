@@ -4,7 +4,7 @@
 	margin: 0;
 	scroll-behavior: smooth;
 	box-sizing: border-box;
-	font-family: Montserrat;
+	font-family: Montserrat, FontAwesome;
 	overflow-x: hidden;
 }
 
@@ -121,7 +121,11 @@ section{
 	color: black;
 	font-size: calc(10px + 1vw);
 	width: 50%;
-	height: 50%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .datos a{
@@ -132,6 +136,7 @@ section{
 
 .redes{
 	width: 50%;
+	height: 40%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -139,13 +144,13 @@ section{
 
 .redes i{
 	color: black;
-	font-size: calc(25px + 1vw);
+	font-size: calc(20px + 1vw);
 }
 
 .box{
 	background-color: white;
 	width: 60%;
-	height: 75%;
+	height: 85%;
 	border: solid 5px #ceb900;
 	padding: 20px;
 	font-size: calc(8px + 1vw);
@@ -156,28 +161,33 @@ section{
 }
 
 .box h1{
+	height: 50px;
 	text-align: center;
-	margin-bottom: 20px;
 }
 
 .formulario{
+	height: 60%;
 	width: 90%;
-}
-
-.formulario p{
-	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .formulario input{
 	width: 100%;
-	height: 30px;
+	min-height: 30px;
+	height: 10%;
 	border-radius: 10px;
 	border: solid 1px lightgrey;
 	padding: 0 10px;
 }
 
 .descripcion{
-	height: 100px !important;
+	width: 100%;
+	height: 20%;
+	border-radius: 10px;
+	border: solid 1px lightgrey;
+	padding: 10px;
 }
 
 .boton{
@@ -185,19 +195,52 @@ section{
 	color: white;
 	background-color: #ceb900;
 	border-radius: 20px;
-	width: 150px;
-	height: 30px;
+	width: 200px;
+	height: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-size: calc(5px + 1vw);
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 600px){
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.iz1{
+	width: 100%;
+	height: 15%;
+	background-color: #ceb900;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.de1{
+	width: 100%;
+	height: 85%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+
 .datos{
 	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
 	font-size: calc(5px + 1vw);
 	width: 50%;
-	height: 50%;
+	height: 80%;
+	padding-left: 20px;
 }
 
 .datos a{
@@ -208,21 +251,21 @@ section{
 
 .redes{
 	width: 50%;
+	padding-right: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-direction: column;
 }
 
 .redes i{
 	color: black;
-	font-size: calc(25px + 1vw);
+	font-size: calc(15px + 1vw);
 }
 	
 .box{
 	background-color: white;
 	width: 60%;
-	height: 75%;
+	height: 90%;
 	border: solid 5px #ceb900;
 	padding: 20px;
 	font-size: calc(6px + 1vw);
@@ -234,27 +277,34 @@ section{
 
 .box h1{
 	text-align: center;
-	margin-bottom: 20px;
 }
 
 .formulario{
+	height: 100%;
 	width: 90%;
-}
-
-.formulario p{
-	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .formulario input{
 	width: 100%;
-	height: 30px;
+	height: auto;
 	border-radius: 10px;
 	border: solid 1px lightgrey;
 	padding: 0 10px;
 }
 
 .descripcion{
-	height: 70px !important;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	border: solid 1px lightgrey;
+	padding: 10px;
+}
+
+.descripcion{
+	height: 50px !important;
 }
 
 .boton{
@@ -267,5 +317,6 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 10px;
 }
 }
