@@ -91,7 +91,7 @@ nav.show{
 
 /*MAIN*/
 
-section{
+.insec{
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -116,12 +116,12 @@ hr{
 
 .galeria{
 	width: 85%;
+	min-height: 400vh;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(50px, 300px));
-	gap: 1%;
-	justify-content: center;
-	min-height: 100%;
-	margin-bottom: 40px;
+	grid-row-gap: 1%;
+	grid-column-gap: 2%;
+	margin-bottom: 50px;
 }
 
 .galeria img{
@@ -129,11 +129,9 @@ hr{
 	height: 100%;
 	object-fit: cover;
 	filter: grayscale();
-	border-radius: 10px;
 }
 
 .galeria img:hover{
-	z-index: 3;
 	filter: none;
 }
 

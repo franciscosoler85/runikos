@@ -104,7 +104,7 @@ section{
 	background-color: #ceb900;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -120,23 +120,22 @@ section{
 .datos{
 	color: black;
 	font-size: calc(10px + 1vw);
-	width: 50%;
-	height: 40%;
+	width: 90%;
+	height: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .datos a{
 	text-decoration: none;
 	color: black;
-	font-size: calc(10px + 1vw);
+	font-size: calc(8px + 1vw);
 }
 
 .redes{
 	width: 50%;
-	height: 40%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -144,7 +143,7 @@ section{
 
 .redes i{
 	color: black;
-	font-size: calc(20px + 1vw);
+	font-size: calc(30px + 1vw);
 }
 
 .box{
@@ -215,56 +214,42 @@ section{
 
 .iz1{
 	width: 100%;
-	height: 15%;
+	height: 10%;
 	background-color: #ceb900;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
 }
 
 .de1{
 	width: 100%;
-	height: 85%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }	
 
 .datos{
-	color: black;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
-	font-size: calc(5px + 1vw);
-	width: 50%;
-	height: 80%;
-	padding-left: 20px;
-}
-
-.datos a{
-	text-decoration: none;
-	color: black;
-	font-size: calc(5px + 1vw);
-}
+	display: none;
+	}
 
 .redes{
-	width: 50%;
-	padding-right: 20px;
+	width: 60%;
+	height: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	gap: 25px;
 }
 
 .redes i{
 	color: black;
-	font-size: calc(15px + 1vw);
+	font-size: calc(25px + 1vw);
 }
 	
 .box{
 	background-color: white;
-	width: 60%;
+	width: 90%;
 	height: 90%;
 	border: solid 5px #ceb900;
 	padding: 20px;
@@ -280,7 +265,7 @@ section{
 }
 
 .formulario{
-	height: 100%;
+	height: 90%;
 	width: 90%;
 	display: flex;
 	flex-direction: column;
